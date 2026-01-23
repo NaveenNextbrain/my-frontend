@@ -1,10 +1,15 @@
 version: 0.2
 
 phases:
+  install:
+    runtime-versions:
+      nodejs: 20
   pre_build:
     commands:
       - echo Installing dependencies...
-      - npm install
+      - node --version
+      - npm --version
+      - npm ci
   build:
     commands:
       - echo Build started on `date`
@@ -12,6 +17,8 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+      - ls -la
+      - ls -la out || ls -la .next
 
 artifacts:
   files:
