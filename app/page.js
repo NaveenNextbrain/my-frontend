@@ -41,7 +41,7 @@ export default function Home() {
       maxWidth: '800px',
       margin: '0 auto'
     }}>
-      <h1 style={{ color: '#0070f3' }}>🚀 My Full Stack Application</h1>
+      <h1 style={{ color: '#0070f3' }}>🚀 My Full Stack Application - CI/CD Works!</h1>
       
       <div style={{ 
         marginTop: '1rem', 
