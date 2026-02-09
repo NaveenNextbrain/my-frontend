@@ -9,7 +9,7 @@ export default function Home() {
   const [error, setError] = useState(null);
 
   // Replace with YOUR Elastic Beanstalk URL
-  const API_URL = 'My-backend-api-env.eba-3qdbwu2n.us-east-1.elasticbeanstalk.com';
+  const API_URL = 'http://My-backend-api-env.eba-3qdbwu2n.us-east-1.elasticbeanstalk.com';
 
   useEffect(() => {
     const fetchData = async () => {
